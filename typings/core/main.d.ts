@@ -46,13 +46,10 @@ export function search(query: string | object, options?: {
 }): Promise<{
     results: {
         title: string;
+        subtitle: string;
         description: string;
         url: string;
         is_sponsored: boolean;
-        favicons: {
-            high_res: string;
-            low_res: string;
-        };
     }[];
     videos: {
         id: string;
